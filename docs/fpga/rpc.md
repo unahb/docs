@@ -21,10 +21,18 @@ The service is the contained in `server.py` and `client.py` and must be run resp
 
 ### Installing Vivado
 
-Vivado must be run on Ubuntu and can be downloaded [here](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-2.html). Follw this [tutorial](https://www.youtube.com/watch?v=3L0baY-DA3c) to install Vivado.  
+Vivado must be run on Ubuntu and can be downloaded [here](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-2.html). Follow this [tutorial](https://www.youtube.com/watch?v=3L0baY-DA3c) to install Vivado.  
 
 ### Building Overlay
 
-These instructions found in `boards/Pynq-Z1/matmult/README.md` build the `matmult.bit`, `matmult.tcl`, and `matmult.hwc` and must be transfered to to the `https://github.com/nimashoghi/matmult/tree/master/overlay/matmult`. 
+These instructions found in `boards/Pynq-Z1/matmult/README.md` build the `matmult.bit`, `matmult.tcl`, and `matmult.hwc` and must be transferred to to the `https://github.com/nimashoghi/matmult/tree/master/overlay/matmult`. 
+
+### Pynq Board
+
+Clone the repository onto the PYNQ board. Make sure that the overlay folder has updated files from the previous step. This will serve as the server.
 
 ### Raspberry Pi
+
+Clone the repository onto a device on the same network as the Pynq board. The Pi will serve as the client.
+
+## Execution
