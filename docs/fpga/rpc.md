@@ -36,3 +36,13 @@ Clone the repository onto the PYNQ board. Make sure that the overlay folder has 
 Clone the repository onto a device on the same network as the Pynq board. The Pi will serve as the client.
 
 ## Execution
+
+Install python3 and the following python modules on the server and client
+
+```
+pip3 install grpcio
+pip3 install grpcio-tools
+pip3 install protobuf
+```
+
+Run the server on the Pynq through `sudo python3 server.py` and the client in the Raspberry Pi `python3 client.py <ip:port>`.
